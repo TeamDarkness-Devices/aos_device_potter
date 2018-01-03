@@ -22,7 +22,11 @@ $(call inherit-product, device/motorola/potter/full_potter.mk)
 TARGET_ARCH := arm64
 TARGET_DENSITY := xxhdpi
 TARGET_BOOT_ANIMATION_RES := 1080
+
 $(call inherit-product, vendor/aos/config/common.mk)
+
+#ARCORE
+TARGET_INCLUDE_ARCORE := true
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
