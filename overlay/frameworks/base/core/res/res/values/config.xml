@@ -336,4 +336,8 @@
     <!-- Whether to show navbar when keyguard host view is visible -->
     <bool name="config_showNavbarInKeyguard">true</bool>
 
+   <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+   in hardware. -->
+   <bool name="config_setColorTransformAccelerated">true</bool>
+
 </resources>
