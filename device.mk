@@ -355,7 +355,8 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common
+    ims-ext-common \
+    telephony-ext
 
 # Sensors
 PRODUCT_COPY_FILES += \
