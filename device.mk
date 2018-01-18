@@ -18,8 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -103,10 +102,6 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
-
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
 
 # AR Core
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -241,10 +236,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
     lights.msm8953
-
-# Display Calibration
-PRODUCT_PACKAGES += \
-    libjni_livedisplay
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -393,10 +384,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf
-
-# Launcher3
-PRODUCT_PACKAGES += \
-    Launcher3
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
